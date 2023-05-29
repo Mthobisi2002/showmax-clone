@@ -1,0 +1,1482 @@
+:root {
+    --primary-color: #e50914;
+    --dark-color: #141414;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: unset;
+    margin: 0;
+    background-color: #000;
+    width: 100%;
+}
+
+.showcase-top {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 3;
+    min-width: 300px;
+    background: var(--dark-color);
+    opacity: .9;
+    margin-top: -1rem;
+}
+
+.showcase-top img {
+    width: 150px;
+    z-index: 3;
+    margin-left: 45%;
+    margin-top: 1rem;
+
+}
+
+.showcase-top span {
+    float: right;
+    z-index: 3;
+    margin-top: 1.5rem;
+    position: relative;
+    right: 1.5%;
+}
+
+.btn-in {
+
+    color: white;
+    background-color: #000;
+}
+
+.btn-in:hover {
+
+    color: #000;
+    background-color: white;
+}
+
+.btn-up {
+    color: #000;
+    background-color: white;
+}
+
+.btn-up:hover {
+    opacity: .4;
+    background-color: #ffffff;
+}
+
+.showcase-top span button {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 21px;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+}
+
+.main {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background: url('../images/partners-bg-za.jpg') no-repeat center center/cover;
+}
+
+.main::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 10px 10px 10px #000000, inset -10px -10px 10px #000000;
+}
+
+.main h1 {
+    font-weight: 1000;
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+    top: 67.5%;
+    position: relative;
+    z-index: 2;
+}
+
+.main h2 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.7rem;
+    text-align: center;
+    top: 70%;
+    position: relative;
+    z-index: 2;
+}
+
+.main-sec {
+    background: #090a15;
+    height: 2160px;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.main-sec .container {
+    text-align: center;
+}
+
+.promotions {
+    display: inline-block;
+    position: relative;
+    top: 60px;
+}
+
+.first-container {
+    width: 1000px;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 5px;
+
+}
+
+.premium {
+    width: 160px;
+    height: 220px;
+    background-color: grey;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.premium img {
+    width: 170px;
+    float: left;
+    display: block;
+    position: relative;
+    top: 28%;
+}
+
+.premium h1 {
+    font-size: 1.1rem;
+    position: relative;
+    display: block;
+    text-align: left;
+    position: absolute;
+    color: #fff;
+    font-weight: 800;
+    margin-top: 7rem;
+    margin-left: 1.5rem;
+}
+
+.premium-details {
+
+    width: 650px;
+    height: 220px;
+    background-color: #ffffffff;
+    position: absolute;
+    display: block;
+    float: left;
+    left: 15.9%;
+}
+
+.premium-details h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.premium-details h2 {
+    font-size: 1rem;
+    font-weight: 510;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    max-width: 600px;
+}
+
+.premium-details h3 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    max-width: 600px;
+}
+
+.button {
+    width: 190px;
+    height: 220px;
+    background-color: #fff;
+    border-left: 1px solid;
+    border-color: #000;
+    float: right;
+}
+
+.btn-sign {
+    font-size: 1rem;
+    padding: 1rem 1.2rem;
+    width: 170px;
+    background-color: #FF1493;
+    border-style: solid;
+    border-color: transparent;
+    color: white;
+    text-align: center !important;
+    margin-top: 3.5rem;
+}
+
+.btn-sign:hover {
+    opacity: .9;
+    background-color: #FF1493;
+}
+
+.center-button {
+    text-align: center;
+}
+
+.center-button button {
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+.button a {
+    color: #000;
+    position: relative;
+    display: block;
+    margin-top: 2rem;
+}
+
+.sec-container {
+    width: 1000px;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 2rem;
+
+}
+
+.compact-plus {
+    width: 160;
+    height: 220px;
+    background-color: #44d8ce;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.compact-plus img {
+    width: 170px;
+    float: left;
+    display: block;
+    position: relative;
+    top: 28%;
+}
+
+.compact-plus h1 {
+    font-size: 1.1rem;
+    position: relative;
+    display: block;
+    text-align: left;
+    position: absolute;
+    color: #fff;
+    font-weight: 800;
+    margin-top: 7rem;
+    margin-left: 1.5rem;
+}
+
+.compactplus-details {
+
+    width: 650px;
+    height: 220px;
+    background-color: #ffffffff;
+    position: absolute;
+    display: block;
+    float: left;
+    left: 15.9%;
+}
+
+.compactplus-details h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.compactplus-details h2 {
+    font-size: 1rem;
+    font-weight: 510;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    max-width: 600px;
+}
+
+.compactplus-details h3 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    max-width: 600px;
+}
+
+.third-container {
+    width: 1000px;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 2rem;
+
+}
+
+.compact {
+    width: 160px;
+    height: 220px;
+    background-color: #FFC300;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.compact img {
+    width: 170px;
+    float: left;
+    display: block;
+    position: relative;
+    top: 28%;
+}
+
+.compact h1 {
+    font-size: 1.1rem;
+    position: relative;
+    display: block;
+    text-align: left;
+    position: absolute;
+    color: #fff;
+    font-weight: 800;
+    margin-top: 7rem;
+    margin-left: 1.5rem;
+}
+
+.compact-details {
+
+    width: 650px;
+    height: 220px;
+    background-color: #ffffffff;
+    position: absolute;
+    display: block;
+    float: left;
+    left: 15.9%;
+}
+
+.compact-details h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.compact-details h2 {
+    font-size: 1rem;
+    font-weight: 510;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    max-width: 600px;
+}
+
+.compact-details h3 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    max-width: 600px;
+}
+
+.fourth-container {
+    width: 1000px;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 2rem;
+
+}
+
+.dstv-only {
+    width: 160px;
+    height: 220px;
+    background-color: #050A30;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.dstv-only img {
+    width: 170px;
+    float: left;
+    display: block;
+    position: relative;
+    top: 30%;
+}
+
+
+.dstv-details {
+
+    width: 650px;
+    height: 220px;
+    background-color: #ffffffff;
+    position: absolute;
+    display: block;
+    float: left;
+    left: 15.9%;
+}
+
+.dstv-details h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+}
+
+.dstv-details h2 {
+    font-size: 1rem;
+    font-weight: 510;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    margin-left: 2rem;
+    margin-top: 1rem;
+    max-width: 600px;
+}
+
+.dstv-details h3 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    margin-left: 2rem;
+    margin-top: 1rem;
+    max-width: 600px;
+}
+
+.fifth-container {
+    width: 1000px;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 2rem;
+
+}
+
+.vodacom {
+    width: 160px;
+    height: 260px;
+    background-color: red;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.vodacom img {
+    width: 140px;
+    height: 70px;
+    float: left;
+    margin-left: 1rem;
+    display: block;
+    position: relative;
+    top: 25%;
+}
+
+.vodacom-details {
+
+    width: 650px;
+    height: 220px;
+    background-color: #fff;
+    position: absolute;
+    display: block;
+    float: left;
+    left: 15.9%;
+}
+
+.vodacom-details h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+}
+
+.vodacom-details h2 {
+    font-size: 1rem;
+    font-weight: 510;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    margin-left: 2rem;
+    margin-top: 1rem;
+    max-width: 600px;
+}
+
+.vodacom-details h3 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    margin-left: 2rem;
+    margin-top: 1rem;
+    max-width: 600px;
+}
+
+.sixth-container {
+    width: 1000px;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 2rem;
+
+}
+
+.mtn {
+    width: 160px;
+    height: 220px;
+    background-color: #FFC300;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.mtn img {
+    width: 160px;
+    height: 100px;
+    float: left;
+    display: block;
+    margin-left: 0rem;
+    position: relative;
+    top: 28%;
+}
+
+.mtn-details {
+
+    width: 650px;
+    height: 220px;
+    background-color: #fff;
+    position: absolute;
+    display: block;
+    float: left;
+    left: 15.9%;
+}
+
+.mtn-details h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+}
+
+.mtn-details h2 {
+    font-size: 1rem;
+    font-weight: 510;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    margin-left: 2rem;
+    margin-top: 1rem;
+    max-width: 600px;
+}
+
+.mtn-details h3 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    margin-left: 2rem;
+    margin-top: 1rem;
+    max-width: 600px;
+}
+
+.seventh-container {
+    width: 1000px;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 2rem;
+
+}
+
+.telkom {
+    width: 160px;
+    height: 220px;
+    background-color: #0E86D4;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.telkom img {
+    width: 140px;
+    height: 50px;
+    float: left;
+    display: block;
+    position: relative;
+    margin-left: 0.5rem;
+    top: 35%;
+}
+
+
+.telkom-details {
+
+    width: 650px;
+    height: 220px;
+    background-color: #fff;
+    position: absolute;
+    display: block;
+    float: left;
+    left: 15.9%;
+}
+
+.telkom-details h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+}
+
+.telkom-details h2 {
+    font-size: 1rem;
+    font-weight: 510;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    margin-left: 2rem;
+    margin-top: 1rem;
+    max-width: 600px;
+}
+
+.telkom-details h3 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    margin-left: 2rem;
+    margin-top: 1rem;
+    max-width: 600px;
+}
+
+.eighth-container {
+    width: 1000px;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 2rem;
+
+}
+
+.mweb {
+    width: 160px;
+    height: 220px;
+    background-color: #0000FF;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.mweb img {
+    width: 120px;
+    height: 30px;
+    float: left;
+    display: block;
+    margin-left: 1.5rem;
+    position: relative;
+    top: 40%;
+}
+
+
+.mweb-details {
+
+    width: 650px;
+    height: 220px;
+    background-color: #fff;
+    position: absolute;
+    display: block;
+    float: left;
+    left: 15.9%;
+}
+
+.mweb-details h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.mweb-details h2 {
+    font-size: 1rem;
+    font-weight: 510;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    max-width: 600px;
+}
+
+.mweb-details h3 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    max-width: 600px;
+}
+
+.back {
+    float: left;
+    margin-top: 2rem;
+}
+
+.back a {
+    color: #fff;
+    font-size: 0.8rem;
+
+}
+
+.faq {
+    background: white;
+    height: fit-content;
+}
+
+.faq h1 {
+    color: #000;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.accordion {
+    max-width: 1300px;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.accordion .contentBx {
+    position: relative;
+    margin: 0px 20px;
+}
+
+.accordion .contentBx .content:hover,
+.accordion .contentBx .label:hover {
+    background: rgb(250, 250, 250);
+}
+
+.accordion .contentBx .label {
+    position: relative;
+    padding: 30px;
+    background: #ffffff;
+    border-top-style: solid;
+    border-top-width: 0.01px;
+    border-top-color: rgb(226, 226, 226);
+    color: #000;
+    cursor: pointer;
+}
+
+.accordion .contentBx .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.accordion .contentBx.active .label::before {
+    content: '-';
+}
+
+.accordion .contentBx .content {
+    position: relative;
+    background: #ffff;
+    height: 0;
+    overflow: hidden;
+    transition: 0.1s;
+    overflow-y: auto;
+}
+
+.accordion .contentBx.active .content {
+    height: fit-content;
+    padding: 10px;
+}
+
+.brick {
+    width: 100%;
+    height: 90px;
+    background: #ffffff;
+}
+
+.covid {
+    background-color: #10101e;
+    height: 100px;
+    width: 100%;
+}
+
+.covid .covid-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.covid-container img {
+    width: 200px;
+    height: 80px;
+    margin-top: 0.6rem;
+    position: relative;
+    display: inline-block;
+}
+
+.covid-container span {
+    position: relative;
+    display: inline-block;
+    margin-left: 1.5rem;
+    color: #fff;
+}
+
+
+
+.footer {
+    text-align: center;
+    background: #000;
+    height: fit-content;
+}
+
+.footer,
+.footer a {
+    color: white;
+    font-size: 1vw;
+    text-decoration: none;
+    font-weight: 500;
+    width: 100%;
+}
+
+.footer p {
+    margin-bottom: 1.5rem;
+
+}
+
+.footer .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1rem;
+    -ms-grid-column-align: start;
+}
+
+.footer li {
+    line-height: 10;
+}
+
+.footer p {
+    font-size: 1.2rem;
+    color: grey;
+    text-align: center;
+}
+
+.thinline {
+    width: 90%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    margin-left: 5rem;
+    margin-top: 2rem;
+
+}
+
+.footer-small {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+
+    .showcase-top img {
+        width: 150px;
+        z-index: 2;
+        margin-left: 0%;
+        margin-top: 1rem;
+    }
+
+    .main {
+        height: 450px;
+        min-width: 400px;
+    }
+
+    .main::after {
+        height: 450px;
+        min-width: 400px;
+    }
+
+    .main h1 {
+        top: 45%;
+    }
+
+    .main h2 {
+        top: 48%;
+    }
+
+    .main-sec {
+        height: 4400px;
+        width: 100vw;
+        min-width: 400px;
+    }
+
+    .button {
+        width: 98vw;
+        height: 180px;
+        margin-top: 20rem;
+        min-width: 385px;
+        border-left: none;
+        float: left;
+    }
+
+    .btn-sign {
+        width: 220px;
+        margin-top: 3rem;
+    }
+
+    .first-container {
+        width: 98vw;
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+        min-width: 385px;
+        display: block;
+
+    }
+
+    .premium {
+        width: 98vw;
+        height: 100px;
+        position: absolute;
+        min-width: 385px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+    }
+
+    .premium img {
+        width: 250px;
+        top: -16%;
+    }
+
+    .premium h1 {
+        font-size: 1.3rem;
+        margin-top: 2.5rem;
+        margin-left: -5rem;
+    }
+
+    .premium-details {
+
+        width: 98vw;
+        height: 250px;
+        margin-top: 6.2rem;
+        border-bottom: 1px solid;
+        min-width: 385px;
+        border-left: none;
+        border-color: #000;
+        left: 0%
+    }
+
+    .sec-container {
+        width: 98vw;
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+        min-width: 385px;
+        display: block;
+
+    }
+
+    .compact-plus {
+        width: 98vw;
+        height: 100px;
+        position: absolute;
+        min-width: 385px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+    }
+
+    .compact-plus img {
+        width: 250px;
+        top: -16%;
+    }
+
+    .compact-plus h1 {
+        font-size: 1.3rem;
+        margin-top: 2.5rem;
+        margin-left: -1.5rem;
+    }
+
+    .compactplus-details {
+
+        width: 98vw;
+        height: 250px;
+        margin-top: 6.2rem;
+        border-bottom: 1px solid;
+        border-left: none;
+        min-width: 385px;
+        border-color: #000;
+        left: 0%
+    }
+
+    .third-container {
+        width: 98vw;
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+        min-width: 385px;
+        display: block;
+
+    }
+
+    .compact {
+        width: 98vw;
+        height: 100px;
+        position: absolute;
+        min-width: 385px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+    }
+
+    .compact img {
+        width: 250px;
+        top: -16%;
+    }
+
+    .compact h1 {
+        font-size: 1.3rem;
+        margin-top: 2.5rem;
+        margin-left: -5rem;
+    }
+
+    .compact-details {
+
+        width: 98vw;
+        height: 250px;
+        margin-top: 6.2rem;
+        border-bottom: 1px solid;
+        min-width: 385px;
+        border-left: none;
+        border-color: #000;
+        left: 0%
+    }
+
+    .fourth-container {
+        width: 98vw;
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+        min-width: 385px;
+        display: block;
+
+    }
+
+    .dstv-only {
+        width: 98vw;
+        height: 100px;
+        position: absolute;
+        min-width: 385px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+    }
+
+    .dstv-only img {
+        width: 250px;
+        top: 0%;
+    }
+
+    .dstv-details {
+
+        width: 98vw;
+        height: 250px;
+        margin-top: 6.2rem;
+        border-bottom: 1px solid;
+        border-left: none;
+        min-width: 385px;
+        border-color: #000;
+        left: 0%
+    }
+
+    .fifth-container {
+        width: 98vw;
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+        min-width: 385px;
+        display: block;
+
+    }
+
+    .vodacom {
+        width: 98vw;
+        height: 100px;
+        position: absolute;
+        min-width: 385px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+    }
+
+    .vodacom img {
+        width: 150px;
+        top: 0%;
+    }
+
+    .vodacom-details {
+
+        width: 98vw;
+        height: 250px;
+        margin-top: 6.2rem;
+        border-left: none;
+        border-bottom: 1px solid;
+        min-width: 385px;
+        border-color: #000;
+        left: 0%
+    }
+
+    .sixth-container {
+        width: 98vw;
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+        min-width: 385px;
+        display: block;
+
+    }
+
+    .mtn {
+        width: 98vw;
+        height: 100px;
+        position: absolute;
+        min-width: 385px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+    }
+
+    .mtn img {
+        width: 200px;
+        top: 0%;
+    }
+
+    .mtn-details {
+
+        width: 98vw;
+        height: 250px;
+        margin-top: 6.2rem;
+        border-left: none;
+        border-bottom: 1px solid;
+        min-width: 385px;
+        border-color: #000;
+        left: 0%
+    }
+
+    .seventh-container {
+        width: 98vw;
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+        min-width: 385px;
+        display: block;
+
+    }
+
+    .telkom {
+        width: 98vw;
+        height: 100px;
+        position: absolute;
+        min-width: 385px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+    }
+
+    .telkom img {
+        width: 200px;
+        top: 0%;
+    }
+
+    .telkom-details {
+
+        width: 98vw;
+        height: 250px;
+        margin-top: 6.2rem;
+        border-left: none;
+        border-bottom: 1px solid;
+        min-width: 385px;
+        border-color: #000;
+        left: 0%
+    }
+
+    .eighth-container {
+        width: 98vw;
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+        min-width: 385px;
+        display: block;
+
+    }
+
+    .mweb {
+        width: 98vw;
+        height: 100px;
+        position: absolute;
+        min-width: 385px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+    }
+
+    .mweb img {
+        width: 200px;
+        top: 0%;
+    }
+
+    .mweb-details {
+        width: 98vw;
+        height: 250px;
+        margin-top: 6.2rem;
+        border-bottom: 1px solid;
+        min-width: 385px;
+        border-left: none;
+        border-color: #000;
+        left: 0%
+    }
+
+    .covid {
+        height: 280px;
+        min-width: 400px;
+    }
+
+    .covid .covid-container {
+        display: block;
+    }
+
+    .covid-container img {
+        width: 250px;
+        display: block;
+        margin: auto;
+        height: 100px;
+        position: relative;
+
+    }
+
+    .covid-container span {
+        position: relative;
+        top: 2rem;
+        font-size: 1.3rem;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .footer-small {
+        display: block;
+        text-align: left;
+        width: 100%;
+        background: #000;
+        height: fit-content;
+    }
+
+    .footer-small a {
+        color: white;
+        font-size: 1.5rem;
+        text-decoration: none;
+        font-weight: 500;
+        width: 100%;
+        margin-left: 0.5rem;
+    }
+
+    .footer-small p {
+        margin-bottom: 1.5rem;
+
+    }
+
+    .footer-small .footer-cols {
+        display: inline-block;
+    }
+
+    .footer-small li {
+        line-height: 2;
+    }
+
+    .footer-small p {
+        font-size: 1.2rem;
+        color: grey;
+        text-align: left;
+        margin-left: 0.5rem;
+    }
+
+    .thinline-small {
+        width: 100%;
+        height: 0.5px;
+        background-color: white;
+        margin-left: auto;
+        margin: auto;
+        position: absolute;
+
+    }
+}
+
+@media(max-width: 485px) {
+    .showcase-top span {
+        float: right;
+        z-index: 2;
+        margin-top: 1.5rem;
+        right: 2%;
+    }
+
+    .showcase-top span button:first-child {
+        display: none;
+    }
+
+    .main-sec {
+        height: 4600px;
+    }
+
+    .fourth-container {
+        height: 550px;
+    }
+
+    .dstv-details {
+        height: 300px;
+    }
+
+    .fourth-container .button {
+        margin-top: 23rem;
+    }
+
+    .fifth-container {
+        height: 550px;
+    }
+
+    .vodacom-details {
+        height: 300px;
+    }
+
+    .fifth-container .button {
+        margin-top: 23rem;
+    }
+
+    .sixth-container {
+        height: 550px;
+    }
+
+    .mtn-details {
+        height: 300px;
+    }
+
+    .sixth-container .button {
+        margin-top: 23rem;
+    }
+
+    .seventh-container {
+        height: 550px;
+    }
+
+    .telkom-details {
+        height: 300px;
+    }
+
+    .seventh-container .button {
+        margin-top: 23rem;
+    }
+
+    .faq {
+        width: fit-content;
+        min-width: 400px;
+    }
+
+    .footer-small {
+        min-width: 400px;
+    }
+}
+
+@media(max-width: 429px) {
+    .eighth-container {
+        height: 550px;
+    }
+
+    .mweb-details {
+        height: 290px;
+    }
+
+    .eighth-container .button {
+        margin-top: 22.5rem;
+    }
+}
+
+@media(max-width: 650px) {
+    .main h1 {
+        font-size: 3rem;
+
+    }
+
+    .main h2 {
+        font-size: 1.2rem;
+
+    }
+}
