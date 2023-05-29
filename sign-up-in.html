@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles/sign-up-in.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://www.jquery-az.com/jquery/js/intlTelInput/intlTelInput.js"></script>
+    <link href="https://www.jquery-az.com/jquery/css/intlTelInput/demo.css" rel="stylesheet" />
+    <link href="https://www.jquery-az.com/jquery/css/intlTelInput/intlTelInput.css" rel="stylesheet" />
+    <title>Sign up | Showmax</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="showmax-logo">
+                <img src="images/showmaxLogo.png" class="logo" alt="showmax">
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="center-signup">
+            <div class="container" id="container">
+                <div class="form-container sign-in-container">
+                    <div class="options">
+                        <button>Create account</button>
+                        <button onclick="mySignin()">Sign in</button>
+                    </div>
+                    <form action="#">
+                        <div class="fill-in">
+                            <h2>Email</h2>
+                            <input type="email" placeholder="Khanyile.x.za@gmail.com" />
+                            <h3>Password<span
+                                    style="color: #232323; font-size: 1rem; font-weight: 300; white-space: nowrap;">&nbsp(enter
+                                    at
+                                    least 6
+                                    characters)</span></h3>
+                            <input type="password" id="myInput" />
+                            <div class="checkbox">
+                                <input type="checkbox" style="width:27px; margin-top: -1rem; margin-left: -17.5rem;"
+                                    onclick="myFunction()">
+                                <h6>&nbsp Show Password</h6>
+                            </div>
+                            <h1>Phone <span style="color: #232323; font-size: 1rem; font-weight: 300;">(Optional)</span>
+                            </h1>
+                            <br>
+                            <input type="tel" id="mobile-number" placeholder="+27 79 565 0681">
+                            <h4>
+                                By clicking Create new account, you have read, understood and agree to be bound by
+                                the
+                                <span style="color:rgb(43, 170, 255)">Service Terms and Conditions,
+                                    Privacy Policy</span> and <span style="color:rgb(43, 170, 255)">Licence
+                                    Agreement.</span>
+                            </h4>
+                            <div class="create-new">
+                                <a href="#" class="btn-create-new">create new account</a>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-right">
+                            <h5>Sign up and start enjoying<br><br>Showmax.</h5>
+                            <div class="info" id="infos">
+                                <br>
+                                <br>
+                                <span><i class="fa-solid fa-check"></i>&nbsp Cancel at any time YOU want.</span>
+                                <h1><i class="fa-solid fa-check"></i>&nbsp Change plans at any time.</h1>
+                                <h2><i class="fa-solid fa-check"></i>&nbsp Only a few steps ahead
+                                    to watch.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="form-container login-container" id="login-container">
+            <div class="options-login">
+                <button onclick="myCreate()">Create account</button>
+                <button>Sign in</button>
+            </div>
+            <form action="#">
+                <div class="fill-in-login">
+                    <h2>Email</h2>
+                    <input type="email" placeholder="Khanyile.x.za@gmail.com" />
+                    <h3>Password<span
+                            style="color: #e1e1e1; font-size: 1rem; font-weight: 300; white-space: nowrap;">&nbsp(enter
+                            at
+                            least 6
+                            characters)</span></h3>
+                    <input type="password" id="myInput2" />
+                    <div class="checkbox">
+                        <input type="checkbox" style="width:27px; margin-top: -1rem; margin-left: -17.5rem;"
+                            onclick="myFunction2()">
+                        <h6>&nbsp Show Password</h6>
+                    </div>
+                    <div class="login">
+                        <a href="#" class="btn-create-new">sign in</a>
+                    </div>
+                    <h1>Forgot Password?</h1>
+                    <div class="thinline"></div>
+                    <h4>We removed Facebook login.</h4>
+                    <h5>Having problems logging in?</h5>
+                    <br>
+                    <a href="#" class="fa fa-comments" aria-hidden="true">&nbsp Chat to us</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section>
+        <div class="center-footer">
+            <div class="footer" id="footer">
+                <h1>Terms & Conditions</h1>
+                <h2>© Showmax. All rights reserved.</h2>
+                <h3>Cookies</h3>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+
+    //Phone number with flags
+    $("#mobile-number").intlTelInput({
+        initialCountry: "za",
+        geoIpLookup: function (callback) {
+            $.get('https://ipinfo.io', function () { }, "jsonp").always(function (resp) {
+                var countryCode = (resp && resp.country) ? resp.country : "";
+                callback(countryCode);
+            });
+        },
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/utils.js" // just for formatting/placeholders etc
+    });
+
+    //verifying if user is signing in or signing up
+    const userlogin = localStorage.getItem("mylog");
+    var login = document.getElementById("login-container");
+    var signin = document.getElementById("container");
+
+    if (window.localStorage.length == 0) {
+        signin.style.display = "block";
+        login.style.display = "none";
+        footer.style.marginTop = "7rem";
+
+    } if (userlogin == "login") {
+        signin.style.display = "none";
+        login.style.display = "block";
+        footer.style.marginTop = "2rem";
+
+    }
+</script>

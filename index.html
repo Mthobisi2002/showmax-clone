@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>
+        Showmax | Everyone's Anywhere TV
+    </title>
+</head>
+
+<body>
+    <header>
+        <div class="showcase-top">
+            <img src="images/showmaxLogo.png" alt="showmax">
+            <span>
+                <button id="btn-up" class="btn-up" onclick="myreg()">Sign up</button>
+                <button id="btn-in" class="btn-in" onclick="mylog()">Sign in</button>
+            </span>
+        </div>
+    </header>
+    <section>
+        <div class="main">
+            <div class="welcome">
+                <h1>Welcome to Africa’s Original Streaming Service</h1>
+                <h2>Stream or download top series, movies, Showmax Originals and more from only R39 pm.</h2>
+                <div class="center-welcome">
+                    <button class="btn-welcome" id="btn-welcome" onclick="myreg()">Sign up and start watching</button>
+                </div>
+            </div>
+            <div class="hero">
+                <img src="images/hero_slash_28032023 (1).png" class="hero_slash">
+                <img src="images/hero_slash_mobile_28032023.png" class="hero_mobile">
+            </div>
+        </div>
+        <div class="sport">
+            <img src="images/players.png" class="players-1">
+            <img src="images/players-mobile.png" class="players-2">
+            <div class="supalogo">
+                <img src="images/1680913886618.png" class="Supersport">
+            </div>
+            <div class="sport-info">
+                <h1>Want the world’s best live football?</h1>
+                <h2>Now at an unmissable price. Available for a limited time</h2>
+                <h3>From
+                    <span>R225</span>
+                    <span>R199 pm</span>
+                </h3>
+            </div>
+            <div class="pro-center">
+                <button class="btn-pro" id="btn-pro" onclick="myreg()">Get Showmax Pro</button>
+            </div>
+        </div>
+        <div class="thin"></div>
+        <div class="deals">
+            <div class="deals-container">
+                <div class="free-trial">
+                    <h1>14-day free trial for new subscribers</h1>
+                    <h2>Try Showmax for free with no commitments. Available on selected plans.</h2>
+                    <div class="free-center">
+                        <button class="btn-free" id="btn-free" onclick="myreg()">Try for free</button>
+                    </div>
+                </div>
+                <div class="dstv-bills">
+                    <h1>Add Showmax to your DStv bill</h1>
+                    <h2>As a DStv subscriber you can enjoy extra discounts and the convenience of a single bill.</h2>
+                    <div class="dstv-center">
+                        <button class="btn-dstv" id="btn-dstv" onclick="mydstv()">
+                            <img src="images/logo_dark_transparent.png" class="dstvlogo">
+                            <span>customer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="specials">
+            <div class="specials-container">
+                <div class="more-specials">
+                    <h1>More specials</h1>
+                    <h2>Explore our latest special offers or add Showmax to a partner account for convenience and
+                        discounts.</h2>
+                </div>
+                <div class="offer-container">
+                    <button class="btn-dstv2" id="btn-dstv2" onclick="mydstv()">
+                        <img src="images/logo_dark_transparent.png" class="dstvlogo2">
+                    </button>
+                    <button class="btn-mtn" id="btn-mtn" onclick="mymtn()">
+                        <img src="images/MTN-logo-459AAF9482-seeklogo.com.png" class="mtnlogo">
+                    </button>
+                    <button class="btn-vodacom" id="btn-vodacom">
+                        <img src="images/vodacom-logo-white.png" class="vodacomlogo">
+                    </button>
+                </div>
+                <div class="latest-offers">
+                    <div class="offer-center">
+                        <button class="btn-offer" id="btn-offer" onclick="myoffer()">view latest offer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="details">
+            <div class="details-container">
+                <div class="d-1">
+                    <h1>Any device. Anywhere.</h1>
+                    <h2>Watch on 2 devices at the same time. Register up to 5 devices.</h2>
+                </div>
+                <div class="wife">
+                    <img src="images/usp-devices-2-for-1_03012023.png" class="wife-img">
+                </div>
+                <div class="hbo">
+                    <img src="images/usp-download-2-for-1_03012023.png" class="hbo-img">
+                </div>
+                <div class="d-2">
+                    <h1>Watch offline and save data</h1>
+                    <h2>Download to watch offline on your mobile or tablet with the Showmax app.</h2>
+                </div>
+                <div class="d-3">
+                    <h1>So many ways to pay</h1>
+                    <h2>Debit and credit card, pre-paid vouchers, PayPal or add to a partner bill. You choose. Cancel
+                        online, anytime.</h2>
+                </div>
+                <div class="pay">
+                    <img src="images/usp-payments-za.png" class="pay-img">
+                </div>
+                <div class="sprint">
+                    <img src="images/usp-data-za.png" class="sprint-img">
+                </div>
+                <div class="d-4">
+                    <h1>Keep your data in check</h1>
+                    <h2>Choose from 3 streaming qualities to control how much data you use.</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq">
+        <br><br><br>
+        <h1>FAQs</h1>
+        <div class="accordion">
+            <div class="contentBx">
+                <div class="label">What is Showmax?</div>
+                <div class="content">
+                    <p>
+                    <h1 style="font-size: 1rem; font-weight: 100; color: grey; text-align: left; max-width: 1150px;
+                                    margin-left: 2.5rem;">
+                        Showmax is a streaming service that offers you a wide variety of award-winning TV shows,
+                        movies,
+                        documentaries, Showmax Originals, kids shows, sport and more. You can watch as much as
+                        you
+                        want, whenever you want
+                        without a single advert.
+                        There's always something new to discover and shows and movies are added weekly. There
+                        are
+                        no
+                        contracts and you can
+                        cancel at any time. Get Showmax all for one low monthly price.
+                    </h1>
+                    <h2 style="font-size: 1rem; font-weight: 100; color: grey; text-align: left; max-width: 1150px;
+                                    margin-left: 2.5rem; margin-top: 1.5rem;">
+                        Showmax offers two plans: a standard
+                        <span style="font-weight: 600; color: rgb(118, 118, 118);">Showmax entertainment</span> plan
+                        and
+                        a <span style="font-weight: 600; color: rgb(118, 118, 118);">Showmax Pro</span> plan.
+                        Showmax
+                        Pro gives you access to
+                        all the entertainment you love plus live sport from SuperSport, news and more.
+                    </h2>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="contentBx">
+                <div class="label">What live sport from Supersport is available on Showmax Pro?</div>
+                <div class="content">
+                    <p>
+                    <h1 style="font-size: 1rem; font-weight: 100; color: grey; text-align: left; max-width: 1150px;
+                                    margin-left: 2.5rem; line-height: 25px;">
+                        • Football: English Premier League, LaLiga, Serie A, FA Cup, UEFA Champions
+                        League, UEFA Europa
+                        League, UEFA Europa Conference League, Premier Soccer League and more<br>
+                        • Athletics: Diamond League, World Challenge League and more<br>
+                        • Running: Berlin, Boston, London, NYC, Soweto Marathons and more<br>
+                        • Boxing: Selected IBF, WBA, WBO, WBC and African Boxing events<br>
+                        • Other: Swimming, Extreme Sports, eSports, Basketball, Triathlon, Horse Racing,
+                        EFC, Netball,
+                        Hockey, and much more
+                    </h1>
+                    <h2 style="font-size: 1rem; font-weight: 100; color: grey; text-align: left; max-width: 1150px;
+                                    margin-left: 2.5rem; margin-top: 1.5rem;">
+                        This list is subject to change based on rights limitations from sporting bodies
+                        and events
+                        availability may vary from
+                        country to country. We <br> are constantly adding new, exciting events to our
+                        catalogue and will
+                        keep
+                        you updated.
+                    </h2>
+                    <h3 style="font-size: 1rem; font-weight: 100; color: grey; text-align: left; max-width: 1150px;
+                                    margin-left: 2.5rem; margin-top: 1.5rem;">
+                        <span style="font-weight: 600; color:rgb(118, 118, 118);">Please note:</span>
+                        The current global pandemic has had a serious impact on the sporting world, with
+                        some events either
+                        postponed or cancelled <br> by organisers. This will affect SuperSport’s ability
+                        to broadcast
+                        certain
+                        events. We will
+                        continue to monitor the situation and make the <br> necessary changes to our
+                        schedule as
+                        developments
+                        occur.
+                    </h3>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="contentBx">
+                <div class="label">Which devices I can watch on?</div>
+                <div class="content">
+                    <p>
+                    <h1 style="font-size: 1rem; font-weight: 100; color: grey; text-align: left; max-width: 1150px;
+                                margin-left: 2.5rem;">
+                        This depends on which plan you choose and what suits you best.
+                    </h1>
+                    <h2 style="font-size: 1rem; font-weight: 100; color: grey; text-align: left; max-width: 1150px;
+                                margin-left: 2.5rem; margin-top: 1.5rem;">With either the standard Showmax or Showmax
+                        Pro
+                        plan, you
+                        can watch on a number of devices,
+                        including smartphones,
+                        tablets, computers, smart TVs, and media boxes.
+                    </h2>
+                    <h3 style="font-size: 1rem; font-weight: 100; color: grey; text-align: left; max-width: 1150px;
+                                margin-left: 2.5rem; margin-top: 1.5rem;">
+                        If you choose the more affordable Showmax Mobile plan, you can watch on either your mobile
+                        device or tablet. Of course,
+                        you can choose to modify your plan at any time. The choice is completely yours.
+                    </h3>
+
+                    <h4 style="font-size: 1rem; font-weight: 100; color: grey; text-align: left; max-width: 1150px;
+                                margin-left: 2.5rem; margin-top: 1.5rem;">
+                        Please note that the live streaming content available on our Pro plans, which includes sports,
+                        is not supported on video
+                        game consoles and some older smart TVs.
+                    </h4>
+                    <h6 style="margin-top: 1.5rem; margin-left: 2.5rem;">
+                        <a href="#" style="color:#FF1493; text-decoration: none; font-size: 1rem; font-weight: 100;">See
+                            all supported Android devices</a>
+                    </h6>
+                    <h6 style="margin-top: 1.5rem; margin-left: 2.5rem;">
+                        <a href="#" style="color:#FF1493; text-decoration: none; font-size: 1rem; font-weight: 100;">See
+                            all supported TVs</a>
+                    </h6>
+
+                    <h6 style="margin-top: 1.5rem; margin-left: 2.5rem;">
+                        <a href="#" style="color:#FF1493; text-decoration: none; font-size: 1rem; font-weight: 100;">See
+                            all
+                            supported web browsers</a>
+                    </h6>
+                    <h6 style="margin-top: 1.5rem; margin-left: 2.5rem;">
+                        <a href="#" style="color:#FF1493; text-decoration: none; font-size: 1rem; font-weight: 100;">See
+                            all
+                            supported Apple devices</a>
+
+                    </h6>
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="contentBx">
+                <div class="label">How much does it cost?</div>
+                <div class="content">
+                    <p>
+                    <h1 style="font-size: 1rem; font-weight: 100; color: grey; text-align: left; max-width: 1150px;
+                                margin-left: 2.5rem;">
+                        Prices start from just:
+                    </h1>
+                    <h2 style="font-size: 1rem; font-weight: 100; color: grey; text-align: left; max-width: 1150px;
+                                margin-left: 2.5rem; margin-top: 1.5rem;">
+                        • R39 in South Africa<br>
+                        • GHC 16.99 in Ghana<br>
+                        • KES 300.00 in Kenya<br>
+                        • NGN 1,200 in Nigeria<br>
+                        • UGX 11,499 in Uganda<br>
+                        • $2.99 in the rest of Africa
+                    </h2>
+                    <h3 style="font-size: 1rem; font-weight: 100; color: grey; text-align: left; max-width: 1150px;
+                                margin-left: 2.5rem; margin-top: 1.5rem;">
+                        Once you’ve signed up, you’ll be presented with all the options for both Showmax
+                        and Showmax
+                        Pro. At this point you can
+                        decide if you want to watch on multiple devices or just on your mobile.
+                        </p>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="contentBx">
+                <div class="label">Which payment methods do you offer?</div>
+                <div class="content">
+                    <p>
+                    <h1 style="font-size: 1rem; font-weight: 100; color: grey; text-align: left; max-width: 1150px;
+                                margin-left: 2.5rem;">
+                        From Card payments, to mobile wallets and vouchers - there are many ways to pay,
+                        and they’re all
+                        safe and secure.
+                    </h1>
+                    <h2 style="font-size: 1rem; font-weight: 100; color: grey; text-align: left; max-width: 1150px;
+                                margin-left: 2.5rem; margin-top: 1.5rem;">
+                        Once you have signed up and selected the plan you wish to pay for, you will be
+                        presented with
+                        the payment options
+                        available for your location. We are confident you shall find a payment
+                        method that suits
+                        you,
+                        and of course you can
+                        cancel online at any time.
+                    </h2>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="contentBx">
+                <div class="label">How do I cancel?</div>
+                <div class="content">
+                    <p>
+                    <h1 style="font-size: 1rem; font-weight: 100; color: grey; text-align: left; max-width: 1150px;
+                                margin-left: 2.5rem;">
+                        We’d love you to stay but if you decide to leave, it’s easy. You can instantly
+                        cancel your
+                        subscription anytime at
+                        <a href="#" style="color:#FF1493; text-decoration: none;">www.showmax.com.</a>
+                        No commitments. No risk. If you need assistance, our friendly team are
+                        always happy to help:
+                        <a href="#" style="color:#FF1493; text-decoration: none;">chat.showmax.com</a>
+                    </h1>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="contentBx">
+                <div class="label">Do I need Wifi or data?</div>
+                <div class="content">
+                    <p>
+                    <h1 style="font-size: 1rem; font-weight: 100; color: grey; text-align: left; max-width: 1150px;
+                            margin-left: 2.5rem;">
+                        Yes. You need reliable internet with a minimum speed of 5 to 10Mbps. You can use Wi-Fi
+                        and/or
+                        data, it’s up to you. You
+                        can however, control how much data you use by choosing from 3 streaming qualities. To
+                        manage
+                        this, simply go to
+                        Bandwidth Capping in your Showmax app Settings. You can also save data by downloading
+                        shows
+                        to
+                        watch offline on your
+                        mobile or tablet with the Showmax app.
+                    </h1>
+                    <h2 style="font-size: 1rem; font-weight: 100; color: grey; text-align: left; max-width: 1150px;
+                            margin-left: 2.5rem; margin-top: 1.5rem;">
+                        Tip: To save costs, download using free Wi-Fi (for example at coffee shops, malls or salons)
+                        but
+                        please be responsible
+                        and adhere to current social distancing regulations.
+                    </h2>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="contentBx">
+                <div class="label">What is streaming and downloading?</div>
+                <div class="content">
+                    <p>
+                    <h1 style="font-size: 1rem; font-weight: 100; color: grey; text-align: left; max-width: 1150px;
+                                margin-left: 2.5rem;">
+                        Streaming means watching videos using the Internet and requires data (Wi-Fi or mobile data).
+                        Downloading a show on your
+                        mobile or tablet allows you to watch offline. This will save the content to your phone
+                        or
+                        tablet
+                        so you can watch it
+                        anywhere, anytime.
+                    </h1>
+                    <h2 style="font-size: 1rem; font-weight: 100; color: grey; text-align: left; max-width: 1150px;
+                                margin-left: 2.5rem; margin-top: 1.5rem;">
+                        Please note that the live streaming content available on our Pro plans, which includes
+                        sports,
+                        is not supported on video
+                        game consoles and some older smart TVs.
+                    </h2>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="contentBx">
+                <div class="label">How do I get the Showmax app?</div>
+                <div class="content">
+                    <p>
+                    <h1 style="font-size: 1rem; font-weight: 100; color: grey; text-align: left; max-width: 1150px;
+                        margin-left: 2.5rem;">
+                        The Showmax app lets you download shows and movies to watch offline. It is available for
+                        Android
+                        and Apple phones,
+                        tablets, smart TVs, media boxes, Xbox One and PS4. Go to the app store on your device,
+                        search
+                        ‘Showmax’, select and
+                        download.
+                    </h1>
+                    <h2 style="font-size: 1rem; font-weight: 100; color: grey; text-align: left; max-width: 1150px;
+                        margin-left: 2.5rem; margin-top: 1.5rem;">
+                        To start watching, sign up at <a href=" #" style="color:#FF1493; text-decoration: none;">
+                            www.showmax.com</a>
+                        and follow the easy steps. Once you’re a
+                        subscriber, log in to the Showmax
+                        app on your <br> device and hit play.
+                    </h2>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="brick">
+    </section>
+    <footer class="footer">
+        <div class="footer-cols">
+            <div class="thinline"></div>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Block & Media Center</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Terms & Conditions &nbsp</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Redeem Voucher</a></li>
+            </ul>
+        </div>
+        <p>© Showmax. All rights reserved.</p>
+    </footer>
+    <footer class="footer-small">
+        <div class="footer-cols">
+            <br>
+            <div class="thinline-small"></div>
+            <br><br>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Block & Media Center</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Terms & Conditions &nbsp</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Redeem Voucher</a></li>
+            </ul>
+        </div>
+        <p>© Showmax. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    const accordion = document.getElementsByClassName('contentBx');
+
+    for (i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener('click', function () {
+            this.classList.toggle('active')
+        })
+    }
+</script>
