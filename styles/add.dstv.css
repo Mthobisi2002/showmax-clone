@@ -1,0 +1,786 @@
+:root {
+    --primary-color: #e50914;
+    --dark-color: #141414;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: unset;
+    margin: 0;
+    background-color: #000;
+    width: 100%;
+}
+
+.showcase-top {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 3;
+    min-width: 375px;
+    background: var(--dark-color);
+    opacity: .9;
+    margin-top: -1rem;
+}
+
+.showcase-top img {
+    width: 150px;
+    z-index: 3;
+    margin-left: 45%;
+    margin-top: 1rem;
+
+}
+
+.showcase-top span {
+    float: right;
+    z-index: 3;
+    margin-top: 1.5rem;
+    position: relative;
+    right: 1.5%;
+}
+
+.btn-in {
+
+    color: white;
+    background-color: #000;
+}
+
+.btn-in:hover {
+
+    color: #000;
+    background-color: white;
+}
+
+.btn-up {
+    color: #000;
+    background-color: white;
+}
+
+.btn-up:hover {
+    opacity: .4;
+    background-color: #ffffff;
+}
+
+.showcase-top span button {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 21px;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+}
+
+.main {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background: url('../images/1920x1080-welcome-pro-za.jpg') no-repeat center center/cover;
+}
+
+.main::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 10px 10px 10px #000000, inset -10px -10px 10px #000000;
+}
+
+.main img {
+    top: 25%;
+    width: 350px;
+    position: relative;
+    display: block;
+    margin: auto;
+    z-index: 2;
+}
+
+.main h1 {
+    font-weight: 1000;
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+    margin-top: 7rem;
+    position: relative;
+    z-index: 2;
+}
+
+.main h2 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.main-sec {
+    background: #090a15;
+    height: 800px;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.main-sec .container {
+    text-align: center;
+}
+
+.dstv-deals {
+    display: inline-block;
+    position: relative;
+    right: 0.25%;
+    top: 40px;
+}
+
+.first-container {
+    width: 375px;
+    height: 210px;
+    background-color: #161721;
+    border-radius: 5px;
+    top: 20%;
+
+}
+
+.sec-container {
+    width: 375px;
+    height: 235px;
+    background-color: #161721;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.third-container {
+    width: 375px;
+    height: 210px;
+    background-color: #161721;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.how-dstv {
+    width: 450px;
+    height: 671.5px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    top: -121px;
+    position: relative;
+    left: 0.25%;
+}
+
+.first-container img {
+    width: 190px;
+    float: left;
+    display: block;
+    position: relative;
+    top: 5%;
+}
+
+.first-container h1 {
+    font-size: 0.9rem;
+    position: relative;
+    display: block;
+    text-align: left;
+    position: absolute;
+    color: grey;
+    font-weight: 800;
+    margin-top: 4.5rem;
+    margin-left: 1.5rem;
+}
+
+.first-container h2 {
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 750;
+    position: absolute;
+    text-align: left;
+    margin-top: 7rem;
+    margin-left: 1.5rem;
+
+}
+
+.first-container h3 {
+    font-size: 1.1rem;
+    color: #dbdbdb;
+    font-weight: 50;
+    position: absolute;
+    text-align: left;
+    margin-top: 9.5rem;
+    margin-left: 1.5rem;
+}
+
+.sec-container img {
+    width: 190px;
+    float: left;
+    position: relative;
+    top: 5%;
+}
+
+.sec-container h1 {
+    font-size: 0.9rem;
+    position: relative;
+    display: block;
+    text-align: left;
+    position: absolute;
+    color: grey;
+    font-weight: 800;
+    margin-top: 4.5rem;
+    margin-left: 1.5rem;
+}
+
+.sec-container h2 {
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 750;
+    position: absolute;
+    text-align: left;
+    margin-top: 7rem;
+    margin-left: 1.5rem;
+}
+
+.sec-container h3 {
+    font-size: 1.1rem;
+    color: #dbdbdb;
+    font-weight: 50;
+    position: absolute;
+    text-align: left;
+    margin-top: 11.5rem;
+    margin-left: 1.5rem;
+}
+
+.third-container img {
+    width: 190px;
+    float: left;
+    position: relative;
+    top: 5%;
+}
+
+.third-container h1 {
+    font-size: 0.9rem;
+    position: relative;
+    display: block;
+    text-align: left;
+    position: absolute;
+    color: orange;
+    font-weight: 800;
+    margin-top: 4.5rem;
+    margin-left: 1.5rem;
+}
+
+.third-container h2 {
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 750;
+    position: absolute;
+    text-align: left;
+    margin-top: 7rem;
+    margin-left: 1.5rem;
+}
+
+.third-container h3 {
+    font-size: 1.1rem;
+    color: #dbdbdb;
+    font-weight: 50;
+    position: absolute;
+    text-align: left;
+    margin-top: 9.5rem;
+    margin-left: 1.5rem;
+}
+
+.how-dstv .h-d h1 {
+    font-size: 1.3rem;
+    font-weight: 750;
+    max-width: 425px;
+    color: #000;
+    text-align: center;
+    position: relative;
+    margin-left: 0.5rem;
+    margin-top: 2rem;
+}
+
+.how-dstv .h-d h2 {
+    font-size: 1.15rem;
+    font-weight: 50;
+    color: #000;
+    text-align: left;
+    position: relative;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.how-dstv .h-d ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    color: #000;
+    font-size: 1.15rem;
+    text-align: left;
+    display: block;
+    line-height: 30px;
+    max-width: 350px;
+    margin-left: 2rem;
+    margin-top: 1rem;
+
+}
+
+.how-dstv .h-d h3 {
+    font-size: 1.15rem;
+    font-weight: 50;
+    color: #000;
+    max-width: 425px;
+    text-align: left;
+    position: relative;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.btn-add {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    width: 150px;
+    background-color: #FF1493;
+    color: white;
+    line-height: 1.1;
+}
+
+.btn-add:hover {
+    opacity: .9;
+    background-color: #FF1493;
+}
+
+.add-showmax-center {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.add-showmax-center a {
+    cursor: pointer;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: 1000;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.faq {
+    background: white;
+    height: fit-content;
+}
+
+.faq h1 {
+    color: #000;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.accordion {
+    max-width: 1300px;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.accordion .contentBx {
+    position: relative;
+    margin: 0px 20px;
+}
+
+.accordion .contentBx .content:hover,
+.accordion .contentBx .label:hover {
+    background: rgb(250, 250, 250);
+}
+
+.accordion .contentBx .label {
+    position: relative;
+    padding: 30px;
+    background: #ffffff;
+    border-top-style: solid;
+    border-top-width: 0.01px;
+    border-top-color: rgb(226, 226, 226);
+    color: #000;
+    cursor: pointer;
+}
+
+.accordion .contentBx .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.accordion .contentBx.active .label::before {
+    content: '-';
+}
+
+.accordion .contentBx .content {
+    position: relative;
+    background: #ffff;
+    height: 0;
+    overflow: hidden;
+    transition: 0.1s;
+    overflow-y: auto;
+}
+
+.accordion .contentBx.active .content {
+    height: fit-content;
+    padding: 10px;
+}
+
+.brick {
+    width: 100%;
+    height: 90px;
+    background: #ffffff;
+}
+
+.footer {
+    text-align: center;
+    background: #000;
+    height: fit-content;
+}
+
+.footer,
+.footer a {
+    color: white;
+    font-size: 1vw;
+    text-decoration: none;
+    font-weight: 500;
+    width: 100%;
+}
+
+.footer p {
+    margin-bottom: 1.5rem;
+
+}
+
+.footer .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1rem;
+    -ms-grid-column-align: start;
+}
+
+.footer li {
+    line-height: 10;
+}
+
+.footer p {
+    font-size: 1.2rem;
+    color: grey;
+    text-align: center;
+}
+
+.thinline {
+    width: 90%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    margin-left: 5rem;
+    margin-top: 2rem;
+
+}
+
+.footer-small {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .showcase-top img {
+        width: 150px;
+        z-index: 2;
+        margin-left: 0%;
+        margin-top: 1rem;
+    }
+
+    .main {
+        height: 450px;
+        min-width: 375px;
+    }
+
+    .main::after {
+        height: 450px;
+        min-width: 375px;
+    }
+
+    .main img {
+        width: 250px;
+        top: 30%;
+    }
+
+    .main h1 {
+        top: -5%;
+    }
+
+    .main h2 {
+        top: -10%;
+    }
+
+    .main-sec {
+        height: fit-content;
+        width: 100%;
+    }
+
+    .how-dstv {
+        display: block;
+    }
+
+    .first-container {
+        width: 100vw;
+        border-radius: 0%;
+    }
+
+    .sec-container {
+        width: 100vw;
+        border-radius: 0%;
+    }
+
+    .third-container {
+        width: 100vw;
+        border-radius: 0%;
+
+    }
+
+    .how-dstv {
+        width: 99.5%;
+        height: fit-content;
+        margin-top: 11rem;
+        top: -75px;
+        border-radius: 0%;
+    }
+
+    .brick3 {
+        width: 100%;
+        height: 50px;
+        background: #ffffff;
+    }
+
+    .how-dstv .h-d h1 {
+        max-width: 95%;
+        top: 40px;
+    }
+
+    .how-dstv .h-d h2 {
+        max-width: 85%;
+        top: 30px;
+    }
+
+    .how-dstv .h-d ol {
+        max-width: 85%;
+        top: 30px;
+        line-height: 40px;
+        position: relative;
+    }
+
+    .how-dstv .h-d h3 {
+        max-width: 85%;
+        top: 20px;
+    }
+
+    .add-showmax-center {
+        margin-top: 4.5rem;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .footer-small {
+        display: block;
+        text-align: left;
+        width: 100%;
+        background: #000;
+        height: fit-content;
+    }
+
+    .footer-small a {
+        color: white;
+        font-size: 1.5rem;
+        text-decoration: none;
+        font-weight: 500;
+        width: 100%;
+        margin-left: 0.5rem;
+    }
+
+    .footer-small p {
+        margin-bottom: 1.5rem;
+
+    }
+
+    .footer-small .footer-cols {
+        display: inline-block;
+    }
+
+    .footer-small li {
+        line-height: 2;
+    }
+
+    .footer-small p {
+        font-size: 1.2rem;
+        color: grey;
+        text-align: left;
+        margin-left: 0.5rem;
+    }
+
+    .thinline-small {
+        width: 100%;
+        height: 0.5px;
+        background-color: white;
+        margin-left: auto;
+        margin: auto;
+        position: absolute;
+
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .showcase-top span {
+        float: right;
+        z-index: 2;
+        margin-top: 1.5rem;
+        right: 2%;
+    }
+
+    .showcase-top span button:first-child {
+        display: none;
+    }
+
+    .main-sec {
+        min-width: 375px;
+    }
+
+    .first-container {
+        min-width: 375px;
+    }
+
+    .sec-container {
+        min-width: 375px;
+    }
+
+    .third-container {
+        min-width: 375px;
+    }
+
+    /*.how-dstv {
+        height: 450px;
+        min-width: 375px;
+    }
+
+    .how-dstv h1 {
+        font-size: 4vw;
+    }
+
+    .how-dstv h2 {
+        font-size: 4vw;
+    }
+
+    .how-dstv ol {
+        font-size: 4vw;
+        line-height: 25px;
+    }
+
+    .how-dstv h3 {
+        font-size: 4vw;
+    }*/
+
+    .btn-add {
+        font-size: 3.8vw;
+        padding: 1rem 2rem;
+        width: 150px;
+        background-color: #FF1493;
+        color: white;
+        line-height: 1.1;
+    }
+
+    .faq {
+        width: fit-content;
+        min-width: 375px;
+    }
+
+    .footer-small {
+        min-width: 375px;
+    }
+}
+
+@media(max-width: 650px) {
+    .main {
+        height: 500px;
+    }
+
+    .main::after {
+        height: 500px;
+    }
+
+    .main h1 {
+        font-size: 2.8rem;
+        top: 0%;
+
+    }
+
+    .main h2 {
+        font-size: 1rem;
+        top: -1%;
+
+    }
+}
+
+/*@media(max-width: 391px) {
+    .how-dstv .h-d {
+        width: 240px;
+        height: fit-content;
+        background: green;
+        margin: auto;
+        display: block;
+    }
+
+    .how-dstv .h-d h1 {
+        max-width: none;
+        margin-left: 0rem;
+        top: 40px;
+    }
+
+    .how-dstv .h-d h2 {
+        max-width: none;
+        top: 30px;
+        margin-left: 0rem;
+        text-align: center;
+    }
+
+    .how-dstv .h-d ol {
+        max-width: none;
+        top: 30px;
+        line-height: 40px;
+        position: relative;
+        margin-left: 1rem;
+    }
+
+    .how-dstv .h-d h3 {
+        max-width: none;
+        top: 20px;
+        margin-left: 1rem;
+    }
+
+    .add-showmax-center {
+        margin-top: 4.5rem;
+    }
+
+
+
+}*/
